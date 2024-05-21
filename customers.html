@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Customers</title>
+</head>
+<body>
+    <nav>
+        <div class="logo_container">
+          <img src="./Asset/logo.svg" alt="">
+          <p>Admin</p>
+        </div>
+        <div class="path">
+          <p>
+              Admin
+          </p>
+          <span class="material-symbols-rounded">
+              chevron_right
+          </span>
+          <span>
+              Customers
+          </span>
+        </div>
+        <div class="logout">
+          <span class="material-symbols-rounded">
+              logout
+          </span>
+        </div>
+    </nav>
+    <main>
+        <aside>
+            <a href="./index.html" class="element">
+                <span class="material-symbols-rounded">
+                    dashboard
+                </span>
+                <h2>
+                    Dashboard
+                </h2> 
+            </a>
+            <a href="./QRmanagement.html" class="element">
+                <span class="material-symbols-rounded">
+                    qr_code_scanner
+                </span>
+                <h2>
+                    QR Management
+                </h2> 
+            </a>
+            <a href="./orders.html" class="element">
+                <span class="material-symbols-rounded">
+                    shopping_cart
+                </span>
+                <h2>
+                    Orders
+                </h2> 
+            </a>
+            <a href="./customers.html" class="element active">
+                <span class="material-symbols-rounded">
+                    group
+                </span>
+                <h2>
+                    Customers
+                </h2> 
+            </a>
+        </aside>
+        <div class="customer-content">
+            <div class="section2">
+                <h2>
+                    Customers
+                </h2>
+                <div style="border: 1px solid #E6E7E8 ;" class="search-bar">
+                    <span class="material-symbols-rounded">
+                        search
+                    </span>
+                    <input  placeholder="Search Customer" type="text">
+                </div>
+            </div>
+            <table class="customer-table">
+                <thead>
+                  <tr>
+                    <th>
+                        <span style="transform: rotate(90deg);" class="material-symbols-rounded">
+                         sync_alt
+                        </span>
+                    </th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Shipping Address</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+<script src="./customers.js"></script>
+</html>
